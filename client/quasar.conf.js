@@ -65,7 +65,8 @@ module.exports = function (ctx) {
         'QRouteTab'
       ],
       directives: [
-        'Ripple'
+        'Ripple',
+        'ScrollFire'
       ],
       // Quasar plugins
       plugins: [
