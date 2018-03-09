@@ -1,3 +1,4 @@
 export default {
-  'parabaazul2': 'card'
+  'parabaazul2': 'card',
+  'parabaazul': 'card'
 }
