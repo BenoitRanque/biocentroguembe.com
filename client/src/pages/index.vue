@@ -1,13 +1,12 @@
 <template>
   <q-page>
-    <!-- <div class="flex flex-center" style="height: 150vh">
+    <div class="flex flex-center" style="height: 150vh">
       <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-    </div> -->
-    <q-img
-      lazy
-      placeholder="/assets/img/placeholder/parabaazul.jpg"
-      src="/assets/img/lg/parabaazul.jpg"
-    ></q-img>
+    </div>
+    <q-img-wrapper name="parabaazul"
+    ></q-img-wrapper>
+    <q-img-wrapper name="parabaazul2" format="card"
+    ></q-img-wrapper>
   </q-page>
 </template>
 
@@ -15,11 +14,11 @@
 </style>
 
 <script>
-import QImg from 'components/QImg'
+import QImgWrapper from 'components/QImgWrapper'
 export default {
   name: 'PageIndex',
   components: {
-    QImg
+    QImgWrapper
   }
 }
 </script>
