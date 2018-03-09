@@ -3,10 +3,17 @@
     <div class="flex flex-center" style="height: 150vh">
       <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
     </div>
-    <q-img-wrapper name="parabaazul"
+    <div class="row">
+      <div class="col-md-6">
+        <q-img-wrapper src="parabaazul" format="card" sizes="md 50"
+        ></q-img-wrapper>
+      </div>
+      <div class="col-md-6">
+    <q-img-wrapper src="parabaazul2" format="card" sizes="lg 40, md 50"
     ></q-img-wrapper>
-    <q-img-wrapper name="parabaazul2" format="card"
-    ></q-img-wrapper>
+
+      </div>
+    </div>
   </q-page>
 </template>
 

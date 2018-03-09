@@ -1,5 +1,5 @@
 <template>
-  <q-img v-once v-bind="$attrs" lazy :placeholder="placeholder" :src="src" :srcset="srcset" :sizes="sizes"/>
+  <q-img v-once v-bind="$attrs" lazy :placeholder="placeholder" :src="compSrc" :srcset="compSrcset" :sizes="compSizes"/>
 </template>
 
 <script>
@@ -15,32 +15,49 @@ export default {
     QImg
   },
   props: {
-    name: String,
-    format: String
+    src: String,
+    format: String,
+    sizes: String
   },
   computed: {
     placeholder () {
-      return `statics/img/placeholder/${this.name}.jpg`
+      return `statics/img/placeholder/${this.src}.jpg`
     },
-    src () {
-      return `statics/img/xl/${this.name}.jpg`
+    compSrc () {
+      return `statics/img/xl/${this.src}.jpg`
     },
-    srcset () {
+    compSrcset () {
       let res = ''
 
       if (!this.format) return ''
       if (!imgSizes[this.format]) return ''
 
       imgSizes[this.format].forEach(size => {
-        if (size.name !== 'placeholder') res += `statics/img/${size.name}/${this.name}.jpg ${size.width}w, `
+        if (size.name !== 'placeholder') res += `statics/img/${size.name}/${this.src}.jpg ${size.width}w, `
       })
 
       res = res.slice(0, -2)
 
       return res
     },
-    sizes () {
-      return `100vw`
+    compSizes () {
+      let breakpoints = {
+        sm: 576,
+        md: 768,
+        lg: 992,
+        xl: 1200
+      }
+
+      if (!this.sizes) return '100vw'
+
+      let res = ''
+      this.sizes.split(', ').forEach(size => {
+        res += `(min-width: ${breakpoints[size.substring(0, 2)]}px) ${size.substring(3)}vw, `
+      })
+
+      res += `100vw`
+
+      return res
     }
   }
 }
