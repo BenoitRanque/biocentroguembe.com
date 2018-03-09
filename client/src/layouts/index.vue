@@ -80,6 +80,12 @@
       <router-view />
     </q-page-container>
 
+    <q-page-sticky position="top-right" :offset="[32, 24]">
+      <q-btn size="xl" color="secondary">
+        SUPER PROMO
+      </q-btn>
+    </q-page-sticky>
+
   </q-layout>
 </template>
 

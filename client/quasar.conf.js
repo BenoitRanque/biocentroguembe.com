@@ -35,6 +35,7 @@ module.exports = function (ctx) {
           loader: 'eslint-loader',
           exclude: /(node_modules|quasar)/
         })
+        cfg.module.rules[0].options.loaders['i18n'] = '@kazupon/vue-i18n-loader'
       }
     },
     devServer: {
@@ -51,6 +52,7 @@ module.exports = function (ctx) {
         'QLayoutDrawer',
         'QPageContainer',
         'QPage',
+        'QPageSticky',
         'QScrollArea',
         'QToolbar',
         'QToolbarTitle',
@@ -61,8 +63,13 @@ module.exports = function (ctx) {
         'QItem',
         'QItemMain',
         'QItemSide',
+        'QItemTile',
+        'QItemSeparator',
         'QTabs',
-        'QRouteTab'
+        'QRouteTab',
+        'QCarousel',
+        'QCarouselSlide',
+        'QCarouselControl'
       ],
       directives: [
         'Ripple',
@@ -75,6 +82,8 @@ module.exports = function (ctx) {
     },
     // animations: 'all' --- includes all animations
     animations: [
+      'slideInDown',
+      'slideOutDown'
     ],
     pwa: {
       cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',

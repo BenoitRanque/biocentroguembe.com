@@ -30,5 +30,37 @@ export default {
       width: 12,
       height: 9
     }
+  ],
+  'slide': [
+    {
+      name: 'xl',
+      width: 1400,
+      height: 700
+    },
+    {
+      name: 'lg',
+      width: 1120,
+      height: 560
+    },
+    {
+      name: 'md',
+      width: 840,
+      height: 420
+    },
+    {
+      name: 'sm',
+      width: 560,
+      height: 280
+    },
+    {
+      name: 'xs',
+      width: 280,
+      height: 140
+    },
+    {
+      name: 'placeholder',
+      width: 20,
+      height: 10
+    }
   ]
 }

@@ -1,5 +1,7 @@
 <template>
-  <q-layout> <!-- Be sure to play with the Layout demo on docs -->
+  <q-layout
+
+  > <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
     <q-layout-header>
@@ -12,6 +14,9 @@
           Header
           <span slot="subtitle">Subtile</span>
         </q-toolbar-title>
+        <div>
+
+        </div>
         <q-btn
           flat
           round
@@ -66,11 +71,42 @@
     <q-layout-drawer
       side="right"
       overlay
-      content-class="bg-blue"
+      content-class=""
       v-model="rightDrawer"
     >
       <!-- QScrollArea is optional -->
-      <q-scroll-area class="fit q-pa-sm">
+      <q-scroll-area class="fit">
+        <q-list no-border highlight>
+          <q-list-header>
+            <div class="row q-pr-xs">
+              <div class="col">
+                Menu
+              </div>
+              <div class="col-auto">
+                <q-btn style="overflow: hidden" flat round dense size="md" @click="$i18n.locale === 'es' ? $i18n.locale = 'en' : $i18n.locale = 'es'">
+                  <transition
+                    :duration="500"
+                    group
+                    name="slide"
+                    mode="out-in"
+                    enter-active-class="animated slideInDown"
+                    leave-active-class="animated slideOutDown"
+                  >
+                    <img key="es" v-if="$i18n.locale === 'es'" src="/statics/flags/BO.png" alt="">
+                    <img key="en" v-else src="/statics/flags/GB.png" alt="">
+                  </transition>
+                </q-btn>
+              </div>
+            </div>
+          </q-list-header>
+          <q-item>
+            <q-item-main>
+              <q-item-tile>
+                hello
+              </q-item-tile>
+            </q-item-main>
+          </q-item>
+        </q-list>
         <!-- Content here -->
       </q-scroll-area>
     </q-layout-drawer>

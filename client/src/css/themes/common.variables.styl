@@ -35,12 +35,15 @@ page-backdrop-overlay = rgba(white, 0.75)
 page-backdrop(image)
   background no-repeat center center fixed
   background-size cover
-  background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay, url('/statics/img/xs/wide/' + image + '.jpg'))
+  background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay), url('/statics/img/xs/' + image + '.jpg')
   @media (min-width $breakpoint-xs + 1)
-    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay, url('/statics/img/sm/wide/' + image + '.jpg'))
+    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay), url('/statics/img/sm/' + image + '.jpg')
   @media (min-width $breakpoint-sm + 1)
-    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay, url('/statics/img/md/wide/' + image + '.jpg'))    
+    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay), url('/statics/img/md/' + image + '.jpg')
   @media (min-width $breakpoint-md + 1)
-    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay, url('/statics/img/lg/wide/' + image + '.jpg'))
+    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay), url('/statics/img/lg/' + image + '.jpg')
   @media (min-width $breakpoint-lg + 1)
-    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay, url('/statics/img/xl/wide/' + image + '.jpg'))
+    background-image linear-gradient(page-backdrop-overlay, page-backdrop-overlay), url('/statics/img/xl/' + image + '.jpg')
+
+.page-width
+  max-width $breakpoint-md + 1

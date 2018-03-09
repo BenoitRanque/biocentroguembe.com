@@ -1,5 +1,5 @@
 <template>
-  <q-img v-once v-bind="$attrs" lazy :placeholder="placeholder" :src="compSrc" :srcset="compSrcset" :sizes="compSizes"/>
+  <q-img v-bind="$attrs" lazy :placeholder="placeholder" :src="compSrc" :srcset="compSrcset" :sizes="compSizes"/>
 </template>
 
 <script>
@@ -10,7 +10,7 @@ import QImg from './QImg'
 import imgSizes from '../../../auto-generate-images/src/sizes'
 
 export default {
-  name: 'QImgWrapper',
+  name: 'QResponsiveImg',
   components: {
     QImg
   },
@@ -42,6 +42,7 @@ export default {
     },
     compSizes () {
       let breakpoints = {
+        xs: 0,
         sm: 576,
         md: 768,
         lg: 992,
@@ -52,7 +53,7 @@ export default {
 
       let res = ''
       this.sizes.split(', ').forEach(size => {
-        res += `(min-width: ${breakpoints[size.substring(0, 2)]}px) ${size.substring(3)}vw, `
+        res += `(min-width: ${breakpoints[size.substring(0, 2)]}px) ${size.substring(3)}, `
       })
 
       res += `100vw`

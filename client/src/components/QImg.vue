@@ -1,6 +1,6 @@
 <template>
   <div class="q-img">
-    <span v-scroll-fire="() =>  { if (state === 0) state += 1 }"/>
+    <div v-scroll-fire="() =>  { if (state === 0) state += 1 }"/>
     <transition name="preview">
       <img
         v-if="placeholder && state < 2"
