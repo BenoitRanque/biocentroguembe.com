@@ -1,0 +1,1 @@
+start "Servidor Desarollo Pagina Web" call quasar dev

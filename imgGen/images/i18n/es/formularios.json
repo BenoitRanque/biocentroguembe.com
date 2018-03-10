@@ -1,0 +1,49 @@
+{
+  "contactohotel": {
+    "title": "Reservar ahora!",
+    "subtitle": "Toda reserva requiere confirmacón",
+    "error": "Error! Itente de nuevo",
+    "success": "Exito!"
+  },
+  "fullname": "Nombre Completo",
+  "firstname": "Nombre",
+  "lastname": "Apellido",
+  "email": "Email",
+  "phone": "Telefono",
+  "message": "Mensaje o comentario",
+  "adults": "Adultos",
+  "teens": "Adolescentes",
+  "children": "Niños",
+  "adultcount": "Cantidad de Adultos",
+  "teencount": "Cantidad de Adolescentes",
+  "childrencount": "Cantidad de Niños",
+  "checkin": "Checkin",
+  "checkout": "Checkout",
+  "send": "Enviar",
+  "ok": "Ok",
+  "cancel": "Cancelar",
+  "clear": "Limpiar",
+  "dias": [
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sábado"
+  ],
+  "meses": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  ]
+}

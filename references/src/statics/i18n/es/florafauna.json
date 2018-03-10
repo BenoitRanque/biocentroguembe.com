@@ -1,0 +1,38 @@
+{
+  "caption1": "Nuestro Aviario es el mas Grande de Sudamerica",
+  "centrocustodia": {
+    "title": "Centro de custodia",
+    "subtitle": "",
+    "body": [
+      "Biocentro Güembé es un importante refugio de fauna que alberga animales incautados por organismos gubernamentales que no tienen posibilidad de recuperación y vuelta al medio natural. Nuestro personal, capacitado en numerosos cursos y talleres, así como profesionales de distintas disciplinas (veterinarios, biólogos…) aseguran el bienestar de los más de 260 animales que se reparten en distintas áreas y ambientes."
+    ]
+  },
+  "faunalocal": {
+    "title": "Fauna Local",
+    "subtitle": "",
+    "body": [
+      "En guembe se alojan muchas especies de fauna local, tanto en cautiverio como silvestres."
+    ]
+  },
+  "flora": {
+    "title": "Flora & Vegetación Nativa",
+    "subtitle": "",
+    "body": [
+      "El componente florístico del área Biológica de Biocentro Güembé, es uno de los sectores que más ha crecido en los últimos años. La flora es el pilar sobre el que sustenta la vida de cualquier ecosistema, por ello debemos luchar por su preservación y explicar su enorme importancia a nuestros visitantes. Contamos con una Huerta orgánica donde aprender la utilidad de los policultivos, un jardín de aromáticas, un vivero de plantas nutricias, una ruta botánica que nos permite conocer la flora autóctona del lugar y un Orquideario donde admirar algunas de las flores más bellas de nuestra región."
+    ]
+  },
+  "missioneducativa": {
+    "title": "Mission Educativa",
+    "subtitle": "",
+    "body": [
+      "Alrededor de este sector se organiza la misión de Biocentro Güembé, nuestro objetivo es difundir todo lo posible el mensaje de conservación de la naturaleza, para ello intentamos aumentar el conocimiento que el visitante tiene de la naturaleza y explicarle la problemática del tráfico de especies y de la pérdida de biodiversidad. Contamos con numerosos proyectos creados en el marco de nuestro programa de Educación Ambiental, que predican nuestro mensaje en diferentes niveles para cualquier grupo de edad. Con ello pretendemos llegar a cualquier persona y conseguir que conozca la realidad que vive a su alrededor, en el ecosistema del que todos formamos parte, la importancia de la conservación de todas las formas de vida, y los numerosos problemas que ponen en peligro la biodiversidad."
+    ]
+  },
+  "evoluseum": {
+    "title": "Evoluseum",
+    "subtitle": "",
+    "body": [
+      "Este centro de interpretación se centra básicamente en la historia de la vida y del universo desde el prisma de la Evolución. En un entorno único y con carteles e instalaciones amenas hace un repaso a la historia del universo y de la vida en la tierra desde el punto de vista de las teorías científicas más sólidas. Un lugar único en Bolivia para embarcarse en la apasionante historia del Universo."
+    ]
+  }
+}

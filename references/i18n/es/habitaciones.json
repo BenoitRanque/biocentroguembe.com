@@ -1,0 +1,63 @@
+{
+  "rooms": [
+    {
+      "header": "Suite Delux",
+      "title": "Para parejas",
+      "subtitle": "",
+      "body": [
+        "• Cama King",
+        "• Baño con Secadora de Pelo",
+        "• Vestidor",
+        "• Sala Star",
+        "• Capacidad de 1 a 2 personas",
+        "• Aire Acondicionado y Calefacción",
+        "• Televisión por cable",
+        "• Telefonía (DDN-DDI)",
+        "• Internet ADSL y WiFi Gratuito",
+        "• Frigobar",
+        "• Room Service (8:30 a 22:00)",
+        "• Caja de Seguridad"
+      ],
+      "image1": "suitedelux_1",
+      "image2": "suitedelux_2"
+    },
+    {
+      "header": "Habitacion Delux",
+      "title": "Para parejas",
+      "subtitle": "",
+      "body": [
+        "• Cama King",
+        "• Baño con Secadora de Pelo",
+        "• Capacidad de 1 a 2 personas",
+        "• Aire Acondicionado y Calefacción",
+        "• Televisión por cable",
+        "• Telefonía (DDN-DDI)",
+        "• Internet ADSL y WiFi Gratuito",
+        "• Frigobar",
+        "• Room Service (8:30 a 22:00)",
+        "• Caja de Seguridad"
+      ],
+      "image1": "habdelux_1",
+      "image2": "habdelux_2"
+    },
+    {
+      "header": "Habitacion Estandar",
+      "title": "Para parejas",
+      "subtitle": "",
+      "body": [
+        "• Cama King",
+        "• Baño Privado(Bañera, Secadora de Pelo)",
+        "• Capacidad de 1 a 2 personas",
+        "• Aire Acondicionado y Calefacción",
+        "• Televisión por cable",
+        "• Telefonía (DDN-DDI)",
+        "• Internet ADSL y WiFi Gratuito",
+        "• Frigobar",
+        "• Room Service (8:30 a 22:00)",
+        "• Caja de Seguridad"
+      ],
+      "image1": "habstandard_1",
+      "image2": "habstandard_2"
+    }
+  ]
+}

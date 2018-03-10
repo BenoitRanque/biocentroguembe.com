@@ -1,0 +1,33 @@
+{
+  "ambientes": "Ambientes",
+  "centrocustodia1": {
+    "title": "Centro de custodia",
+    "subtitle": "",
+    "body": "Biocentro Güembé es un importante refugio de fauna que alberga animales incautados por organismos gubernamentales que no tienen posibilidad de recuperación y vuelta al medio natural. Nuestro personal, capacitado en numerosos cursos y talleres, así como profesionales de distintas disciplinas (veterinarios, biólogos…) aseguran el bienestar de los más de 260 animales que se reparten en distintas áreas y ambientes."
+  },
+  "centrocustodia2": {
+    "title": "Impacto del trafico de animales nativos",
+    "subtitle": "",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "aviario": {
+    "title": "Aviario",
+    "subtitle": "",
+    "body": "Una de las estructuras más impresionantes del parque es el Aviario. Históricamente es la primera construcción de Güembé. Construido sin utilizar maquinaria pesada, el enmallado del Aviario, de 35 metros de altura, alberga más de 130 aves, cerca de 25 especies diferentes en los casi 2800 mt2. Todos estos animales fueron incautados a traficantes o donados por particulares. La estructura se completa con un puente a la altura de la copa de los árboles y un impresionante mirador desde el que podemos admirar la selva que tapiza los alrededores de Santa Cruz y el Parque Nacional Amboró."
+  },
+  "monos": {
+    "title": "Monos",
+    "subtitle": "",
+    "body": "Esta isla creada especialmente para albergar monos, se encuentra en medio de una gran laguna artificial. En ella viven dos comunidades de monos de dos especies distintas: Capuchinos (Cebus libidinosus) y Saimiri (Saimiri boliviensis) en perfecta armonía. Las interacciones y relaciones sociales entre los individuos, son detalladamente observadas por nuestros profesionales."
+  },
+  "pantanocurichi": {
+    "title": "Pantano & Curichi",
+    "subtitle": "",
+    "body": "Con unos 2500 metros cuadrados y numerosas especies de plantas y aves, este pantano natural alberga a los roedores más grandes del mundo (capibaras), las aves más grandes de Sudamérica (ñandúes) y uno de los cérvidos más pequeños (urinas) en unas instalaciones adaptadas a sus necesidades."
+  },
+  "tortugario": {
+    "title": "Tortugario",
+    "subtitle": "",
+    "body": "Es un recinto de unos 2000 m² con un cercado de troncos de madera. Presenta un desnivel natural y cuenta con fuentes de agua simulando riachuelos y comederos. Alberga más de 100 tortugas de dos especies: Chelonoides denticulata y Chelonoides carbonaria, que disfrutan de un medio totalmente adecuado a sus necesidades y perfectamente natural."
+  }
+}

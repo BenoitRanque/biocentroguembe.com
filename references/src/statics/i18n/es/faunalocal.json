@@ -1,0 +1,30 @@
+{
+  "mariposario": {
+    "title": "Mariposario",
+    "subtitle": "",
+    "body": [
+      "El mariposario actual es una versión del primero, que es lo que hoy conocemos como el Aviario. Los primeros trabajos con profesionales en el área de biología estuvieron centrados en este campo."
+    ]
+  },
+  "faunasilvestre": {
+    "title": "Fauna Silvestre",
+    "subtitle": "",
+    "body": [
+      "Muchois animales nativos aun habitan guembe. Con suerte y respeto se pueden observar animales emblematicos, como perezosos o monos."
+    ]
+  },
+  "meliponario": {
+    "title": "Meliponario",
+    "subtitle": "",
+    "body": [
+      "En esta área se exhiben colmenas de abejas suro (Scaptotrigona spp.), de abejas señorita (Tetragonisca angustula), y de abejas obobosi (Scaptotrigonaspp.), todas ellas abejas sin aguijón del órden de las Meliponas. La importancia de las abejas es enorme para el funcionamiento de los ecosistemas, son consideradas una especie clave por su importantísima función como polinizadores, lo que significa que su desaparición pondría en peligro el equilibrio de todo el ecosistema, incluso se considera que si todas las especies de abejas desapareciesen, los ecosistemas globales de todo el mundo tardarían sólo 3 años en colapsar por completo."
+    ]
+  },
+  "terrario": {
+    "title": "Terrario",
+    "subtitle": "",
+    "body": [
+      "Diseñado con la intención de mostrar a los visitantes los distintos ecosistemas de la selva, el terrario exhibe animales de lo más dispar, desde tarántulas, hormigas o termitas, hasta iguanas, explicando su importancia ecológica y su papel en el funcionamiento del ecosistema."
+    ]
+  }
+}

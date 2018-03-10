@@ -1,64 +1,26 @@
 <template>
   <q-page>
     <q-backdrop src="grafico_piscinas"/>
-    <q-carousel infinite arrows handle-arrow-keys style="height:100vh">
-      <q-carousel-slide class="q-pa-none">
-        <q-responsive-img src="grafico_piscinas" format="slide" class="fit" style="object-fit: cover"/>
-      </q-carousel-slide>
-      <q-carousel-slide class="q-pa-none">
-        <q-responsive-img src="grafico_hotel" format="slide" class="fit" style="object-fit: cover"/>
-      </q-carousel-slide>
-      <q-carousel-slide class="q-pa-none">
-        <q-responsive-img src="grafico_fauna" format="slide" class="fit" style="object-fit: cover"/>
-      </q-carousel-slide>
-      <q-carousel-slide class="q-pa-none">
-        <q-responsive-img src="grafico_recreacion" format="slide" class="fit" style="object-fit: cover"/>
+    <q-carousel infinite arrows handle-arrow-keys>
+      <q-carousel-slide
+        class="q-pa-none"
+        v-for="(slide, index) in slides"
+        :key="index"
+        @click.native="slide.target && $router.push(slide.target)"
+      >
+        <q-responsive-img :src="slide.image" format="slide" immediate />
       </q-carousel-slide>
       <!-- <q-carousel-control position="bottom" slot="control-nav" slot-scope="carousel" :offset="[18, 52]">
 
       </q-carousel-control> -->
     </q-carousel>
+    {{$t('local')}}
     <div class="layout-padding page-width">
       <div class="row wrap gutter-sm">
-        <div class="col-sm-6 col-md-4 col-12">
+        <div class="col-sm-6 col-md-4 col-12" v-for="(card, index) in cards" :key="index">
           <q-card>
             <q-card-media>
-              <q-responsive-img src="parabaazul2" format="card" sizes="lg 40vw, md 50vw"></q-responsive-img>
-            </q-card-media>
-          </q-card>
-        </div>
-        <div class="col-sm-6 col-md-4 col-12">
-          <q-card>
-            <q-card-media>
-              <q-responsive-img src="parabaazul2" format="card" sizes="lg 40vw, md 50vw"></q-responsive-img>
-            </q-card-media>
-          </q-card>
-        </div>
-        <div class="col-sm-6 col-md-4 col-12">
-          <q-card>
-            <q-card-media>
-              <q-responsive-img src="parabaazul2" format="card" sizes="lg 40vw, md 50vw"></q-responsive-img>
-            </q-card-media>
-          </q-card>
-        </div>
-        <div class="col-sm-6 col-md-4 col-12">
-          <q-card>
-            <q-card-media>
-              <q-responsive-img src="parabaazul2" format="card" sizes="lg 40vw, md 50vw"></q-responsive-img>
-            </q-card-media>
-          </q-card>
-        </div>
-        <div class="col-sm-6 col-md-4 col-12">
-          <q-card>
-            <q-card-media>
-              <q-responsive-img src="parabaazul2" format="card" sizes="lg 40vw, md 50vw"></q-responsive-img>
-            </q-card-media>
-          </q-card>
-        </div>
-        <div class="col-sm-6 col-md-4 col-12">
-          <q-card>
-            <q-card-media>
-              <q-responsive-img src="parabaazul2" format="card" sizes="lg 40vw, md 50vw"></q-responsive-img>
+              <q-responsive-img :src="card" format="card" sizes="lg 300px, md 33vw, sm 50vw"></q-responsive-img>
             </q-card-media>
           </q-card>
         </div>
@@ -81,6 +43,36 @@ export default {
     QImg,
     QResponsiveImg,
     QBackdrop
+  },
+  data () {
+    return {
+      slides: [
+        {
+          target: '/aviario',
+          image: 'grafico_fauna'
+        },
+        {
+          target: '/aviario',
+          image: 'grafico_hotel'
+        },
+        {
+          target: '/aviario',
+          image: 'grafico_piscinas'
+        },
+        {
+          target: '/aviario',
+          image: 'grafico_recreacion'
+        }
+      ],
+      cards: [
+        'parabaazul',
+        'parabaazul2',
+        'parabaazul',
+        'parabaazul2',
+        'parabaazul',
+        'parabaazul2'
+      ]
+    }
   }
 }
 </script>

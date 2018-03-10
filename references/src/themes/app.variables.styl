@@ -1,0 +1,52 @@
+// This file is included in the build if src/main.js imports
+// either app.mat.styl or app.ios.styl.
+// Check "DEFAULT / CUSTOM STYLE" in src/main.js
+
+// App Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Stylus variables found in Quasar's source Stylus files. Setting
+// variables before Quasar's Stylus will use these variables rather than
+// Quasar's default Stylus variable values. Stylus variables specific
+// to the themes belong in either the app.ios.styl or app.mat.styl files.
+
+
+// App Shared Color Variables
+// --------------------------------------------------
+// It's highly recommended to change the default colors
+// to match your app's branding.
+
+$primary = #00612d
+$secondary = #1785d5
+$tertiary = #14182f
+
+$neutral   = #E0E1E2
+$positive  = #21BA45
+$negative  = #DB2828
+$info      = #31CCEC
+$warning   = #F2C037
+
+$link-color = lighten($secondary, 25%)
+$link-color-active = $secondary
+
+$tooltip-color = white
+$tooltip-background =	rgba(0,0,0,.6)
+$tooltip-border-radius = 4rem
+
+.wrapper
+  max-width 1400px
+  margin 0 auto
+
+body
+  font-size 16px
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a
+  user-select none

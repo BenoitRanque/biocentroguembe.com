@@ -1,0 +1,93 @@
+{
+  "mariposario": {
+    "title": "Mariposario",
+    "subtitle": "",
+    "body": [
+      "El mariposario actual es una versión del primero, que es lo que hoy conocemos como el Aviario. Los primeros trabajos con profesionales en el área de biología estuvieron centrados en este campo. Tras numerosos estudios e intentos, diseñamos nuestro propio sistema de cría y producción de mariposas que a lo largo de los años se ha ido perfeccionando. Actualmente somos uno de los centros de cría de mariposas referencia. Ligada a este área de cría está la de producción de plantas nutricias (vivero) con las que alimentamos a las orugas. Nuestro sistema de cría nos ha permitido en estos años, reproducir 52 especies de mariposas nativas de la zona, conociendo sus ciclos reproductivos, alimentación y fenología."
+    ]
+  },
+  "ciclo": {
+    "huevo": {
+      "title": "Huevo",
+      "subtitle": "3 a 10 Días",
+      "image": "",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    "larva": {
+      "title": "Larva",
+      "subtitle": "15 a 60 Dias",
+      "image": "",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    "pupa": {
+      "title": "Pupa",
+      "subtitle": "14 a 21 Dias",
+      "image": "",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    "adulto": {
+      "title": "Mariposa Adulta",
+      "subtitle": "15 a 30 Dias",
+      "image": "",
+      "body": [
+        ""
+      ]
+    }
+  },
+  "specieslist": [
+    {
+      "title": "Nombre Cientifico",
+      "subtitle": "Nombre Comun",
+      "image": "mariposa_2",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    {
+      "title": "Nombre Cientifico",
+      "subtitle": "Nombre Comun",
+      "image": "mariposa_3",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    {
+      "title": "Nombre Cientifico",
+      "subtitle": "Nombre Comun",
+      "image": "mariposa_4",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    {
+      "title": "Nombre Cientifico",
+      "subtitle": "Nombre Comun",
+      "image": "mariposa_5",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    {
+      "title": "Nombre Cientifico",
+      "subtitle": "Nombre Comun",
+      "image": "mariposa_6",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    },
+    {
+      "title": "Nombre Cientifico",
+      "subtitle": "Nombre Comun",
+      "image": "mariposa_7",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      ]
+    }
+  ]
+}

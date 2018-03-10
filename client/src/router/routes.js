@@ -2,16 +2,16 @@
 export default [
   {
     path: '/',
-    component: () => import('layouts/index'),
+    component: () => import('layouts/main'),
     children: [
-      { path: '', component: () => import('pages/index') }
+      { path: '', name: 'index', component: () => import('pages/index') }
     ]
   },
   {
     path: '/',
     component: () => import('layouts/main'),
     children: [
-      { path: '404', component: () => import('pages/404') }
+      { path: '404', name: '404', component: () => import('pages/404') }
     ]
   },
 

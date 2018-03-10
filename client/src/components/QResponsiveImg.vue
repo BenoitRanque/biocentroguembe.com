@@ -1,5 +1,5 @@
 <template>
-  <q-img v-bind="$attrs" lazy :placeholder="placeholder" :src="compSrc" :srcset="compSrcset" :sizes="compSizes"/>
+  <q-img v-bind="$attrs" :lazy="!immediate" :placeholder="placeholder" :src="compSrc" :srcset="compSrcset" :sizes="compSizes"/>
 </template>
 
 <script>
@@ -7,7 +7,7 @@
 // const img = require('../assets/img/index')
 // console.log(img)
 import QImg from './QImg'
-import imgSizes from '../../../auto-generate-images/src/sizes'
+import imgSizes from '../../../imgGen/src/sizes'
 
 export default {
   name: 'QResponsiveImg',
@@ -17,7 +17,8 @@ export default {
   props: {
     src: String,
     format: String,
-    sizes: String
+    sizes: String,
+    immediate: Boolean
   },
   computed: {
     placeholder () {

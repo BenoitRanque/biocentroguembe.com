@@ -1,0 +1,38 @@
+{
+  "pages": {
+    "index": "Welcome",
+    "resort": "Resort",
+    "hotel": "Hotel",
+    "gastronomia": "Gastronomy",
+    "florafauna": "Flora & Fauna",
+    "centrocustodia": "Custody Center",
+    "aviario": "Aviary",
+    "monos": "Jungle & Monkey Island",
+    "pantanocurichi": "Swampt & Curichi",
+    "faunalocal": "Local Fauna",
+    "faunasilvestre": "Wildlife",
+    "flora": "Flora",
+    "mariposario": "Butterfly Dome",
+    "parqueacuatico": "Acuapark",
+    "recreacion": "Recreation",
+    "cabanas": "Bungalows",
+    "habitaciones": "Rooms",
+    "eventos": "Events",
+    "precios": "Prices & Special Offers",
+    "nosotros": "About Us",
+    "mapa": "Map"
+  },
+  "footer": {
+    "copyright": [
+      "Biocentro Guembe S.A.",
+      "Km. 5 Camino a Porongo, desvio Las Cruces",
+      "Zona Urubo - Santa Cruz - Bolivia",
+      "",
+      "© 2017 Biocentro Güembé S.A."
+    ]
+  },
+  "glossary": {
+    "sabermas": "More",
+    "especies": "Hosted Species"
+  }
+}
