@@ -63,17 +63,17 @@
     </q-layout-footer>
 
     <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
-    <q-layout-drawer
+    <!-- <q-layout-drawer
       side="right"
       overlay
       content-class="bg-blue"
       v-model="rightDrawer"
-    >
+    > -->
       <!-- QScrollArea is optional -->
-      <q-scroll-area class="fit q-pa-sm">
+      <!-- <q-scroll-area class="fit q-pa-sm"> -->
         <!-- Content here -->
-      </q-scroll-area>
-    </q-layout-drawer>
+      <!-- </q-scroll-area> -->
+    <!-- </q-layout-drawer> -->
 
     <q-page-container>
       <!-- This is where pages get injected -->
@@ -90,8 +90,12 @@
 </template>
 
 <script>
+import QResponsiveImg from 'components/QResponsiveImg'
 export default {
-  // name: 'LayoutName',
+  name: 'IndexLayout',
+  components: {
+    QResponsiveImg
+  },
   data () {
     return {
       rightDrawer: true
