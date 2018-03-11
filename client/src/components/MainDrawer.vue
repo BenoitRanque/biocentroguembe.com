@@ -1,31 +1,47 @@
 <template>
-  <q-scroll-area class="fit">
-    <q-list no-border highlight>
+  <q-scroll-area class="fit bg-secondary">
+    <q-list no-border link dark>
+      <q-list-header>
+        {{$t('map')}}
+      </q-list-header>
+      <q-item class="q-pa-none" to="map">
+        <q-item-main>
+          <q-item-tile>
+            <q-responsive-img src="map" format="map" sizes="xs 300px"></q-responsive-img>
+          </q-item-tile>
+        </q-item-main>
+      </q-item>
+
+      <q-list-header>
+        {{$t('menu')}}
+      </q-list-header>
+      <q-item to="aviary" v-for="page in pages" :key="page">
+        <q-item-main>
+          <q-item-tile>
+            {{$t(`page.${page}`)}}
+          </q-item-tile>
+        </q-item-main>
+      </q-item>
       <q-list-header>
         <div class="row q-pr-xs">
           <div class="col">
-            {{$t('menu')}}
+            {{$t('language')}}
           </div>
           <div class="col-auto">
-            <q-btn class="" style="overflow:hidden;" flat round dense size="md" @click="$locale === 'es' ? $locale = 'en' : $locale = 'es'">
-              <transition
-                :duration="500"
-                enter-active-class="animated slideInDown"
-                leave-active-class="animated slideOutDown"
-              >
-                <img class="absolute" key="es" src="/statics/flags/BO.png" alt="" v-if="$i18n.locale === 'es'">
-                <img class="absolute" key="en" src="/statics/flags/GB.png" alt="" v-else>
-              </transition>
-            </q-btn>
           </div>
         </div>
       </q-list-header>
-      <q-item>
+      <q-item @click.native="$refs.toggle.toggle()">
         <q-item-main>
           <q-item-tile>
-            {{$t('hello')}}
+            {{$t('currentLang')}}
           </q-item-tile>
         </q-item-main>
+        <q-item-side>
+          <q-item-tile>
+            <lang-toggle ref="toggle"></lang-toggle>
+          </q-item-tile>
+        </q-item-side>
       </q-item>
     </q-list>
     <!-- Content here -->
@@ -33,8 +49,17 @@
 </template>
 
 <script>
+import QResponsiveImg from 'components/QResponsiveImg'
+import LangToggle from 'components/LangToggle'
+import pages from '../router/pages'
 export default {
-
+  name: 'MainDrawer',
+  components: { LangToggle, QResponsiveImg },
+  data () {
+    return {
+      pages
+    }
+  }
 }
 </script>
 
@@ -45,11 +70,15 @@ export default {
 <i18n>
 {
   "es": {
-    "hello": "hola",
+    "language": "Idioma",
+    "currentLang": "Español",
+    "map": "Mapa Interactivo",
     "menu": "Menú"
   },
   "en": {
-    "hello": "hello",
+    "language": "Language",
+    "currentLang": "English",
+    "map": "Interactive Map",
     "menu": "Menu"
   }
 }

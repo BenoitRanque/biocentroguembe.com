@@ -12,16 +12,12 @@ export default ({ app, Vue }) => {
     messages
   })
 
-  Object.defineProperty(Vue.prototype, '$locale', {
-    get: function () {
-      return app.i18n.locale
-    },
-    set: function (locale) {
-      app.i18n.locale = locale
-    }
-  })
-
-  console.log(Vue.prototype)
-  console.log(VueI18n.prototype)
-  console.log(app.i18n)
+  // Object.defineProperty(Vue.prototype, '$locale', {
+  //   get: function () {
+  //     return app.i18n.locale
+  //   },
+  //   set: function (locale) {
+  //     app.i18n.locale = locale
+  //   }
+  // })
 }

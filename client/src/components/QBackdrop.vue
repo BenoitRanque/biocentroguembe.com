@@ -19,7 +19,7 @@ export default {
 
 <style scoped lang="stylus">
 .q-backdrop
-  opacity 0.75
+  opacity 1
   z-index -1
   object-fit cover
   position fixed

@@ -3,7 +3,7 @@
     <q-backdrop src="grafico_piscinas"/>
     <q-carousel infinite arrows handle-arrow-keys>
       <q-carousel-slide
-        class="q-pa-none"
+        class="q-pa-none cursor-pointer"
         v-for="(slide, index) in slides"
         :key="index"
         @click.native="slide.target && $router.push(slide.target)"
@@ -14,13 +14,21 @@
 
       </q-carousel-control> -->
     </q-carousel>
-    {{$t('local')}}
     <div class="layout-padding page-width">
-      <div class="row wrap gutter-sm">
-        <div class="col-sm-6 col-md-4 col-12" v-for="(card, index) in cards" :key="index">
+      <!-- <div class="row wrap gutter-sm q-mb-md">
+        <div class="col-sm-4 col-12" v-for="(card, index) in promos" :key="index">
           <q-card>
             <q-card-media>
-              <q-responsive-img :src="card" format="card" sizes="lg 300px, md 33vw, sm 50vw"></q-responsive-img>
+              <q-responsive-img :src="card" format="vcard" sizes="lg 300px, md 33vw"></q-responsive-img>
+            </q-card-media>
+          </q-card>
+        </div>
+      </div> -->
+      <div class="row wrap gutter-sm">
+        <div class="col-xs-6 col-md-4 col-12" v-for="(card, index) in cards" :key="index">
+          <q-card>
+            <q-card-media>
+              <q-responsive-img :src="card" format="card" sizes="lg 300px, md 33vw, xs 50vw"></q-responsive-img>
             </q-card-media>
           </q-card>
         </div>
@@ -72,18 +80,12 @@ export default {
         'parabaazul',
         'parabaazul2'
       ]
+      // promos: [
+      //   'promo_1',
+      //   'promo_2',
+      //   'promo_3'
+      // ]
     }
   }
 }
 </script>
-
-<i18n>
-{
-  "es": {
-    "local": "como esta"
-  },
-  "en": {
-    "local": "how are you"
-  }
-}
-</i18n>

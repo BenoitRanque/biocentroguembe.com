@@ -1,5 +1,6 @@
 <template>
   <q-layout
+    view="HHH lpR fff"
   > <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
@@ -37,7 +38,7 @@
       content-class=""
       v-model="rightDrawer"
     >
-      <main-drawer></main-drawer>
+      <main-drawer class="fit"></main-drawer>
     </q-layout-drawer>
 
     <q-page-container>
