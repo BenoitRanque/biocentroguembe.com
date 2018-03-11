@@ -27,52 +27,7 @@
 
     <!-- (Optional) The Footer -->
     <q-layout-footer>
-      <!-- <q-toolbar>
-        <q-btn
-          flat
-          round
-          dense
-          icon="menu"
-          @click="leftDrawer = !leftDrawer"
-        />
-        <q-toolbar-title>
-          Footer
-          <span slot="subtitle">Subtile</span>
-        </q-toolbar-title>
-        <q-btn
-          flat
-          round
-          dense
-          icon="menu"
-          @click="leftDrawer = !leftDrawer"
-        />
-      </q-toolbar>
-      <q-tabs>
-        <q-route-tab
-          slot="title"
-          icon="map"
-          to="/your/route"
-          replace
-          label="One Tab"
-        />
-        <q-route-tab
-          slot="title"
-          icon="assignment"
-          to="/some/other/route"
-          replace
-          label="Other Tab"
-        />
-      </q-tabs> -->
-      <div class="layout-padding bg-white">
-        <div class="page-width">
-          content here
-        </div>
-      </div>
-      <div class="layout-padding bg-primary shadow-up-6">
-        <div class="page-width">
-
-        </div>
-      </div>
+      <main-footer></main-footer>
     </q-layout-footer>
 
     <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
@@ -82,38 +37,7 @@
       content-class=""
       v-model="rightDrawer"
     >
-      <!-- QScrollArea is optional -->
-      <q-scroll-area class="fit">
-        <q-list no-border highlight>
-          <q-list-header>
-            <div class="row q-pr-xs">
-              <div class="col">
-                {{$t('menu')}}
-              </div>
-              <div class="col-auto">
-                <q-btn class="" style="overflow:hidden;" flat round dense size="md" @click="$locale === 'es' ? $locale = 'en' : $locale = 'es'">
-                  <transition
-                    :duration="500"
-                    enter-active-class="animated slideInDown"
-                    leave-active-class="animated slideOutDown"
-                  >
-                    <img class="absolute" key="es" src="/statics/flags/BO.png" alt="" v-if="$i18n.locale === 'es'">
-                    <img class="absolute" key="en" src="/statics/flags/GB.png" alt="" v-else>
-                  </transition>
-                </q-btn>
-              </div>
-            </div>
-          </q-list-header>
-          <q-item>
-            <q-item-main>
-              <q-item-tile>
-                {{$t('hello')}}
-              </q-item-tile>
-            </q-item-main>
-          </q-item>
-        </q-list>
-        <!-- Content here -->
-      </q-scroll-area>
+      <main-drawer></main-drawer>
     </q-layout-drawer>
 
     <q-page-container>
@@ -125,8 +49,14 @@
 </template>
 
 <script>
+import MainFooter from 'components/MainFooter'
+import MainDrawer from 'components/MainDrawer'
 export default {
-  // name: 'LayoutName',
+  name: 'MainLayout',
+  components: {
+    MainFooter,
+    MainDrawer
+  },
   data () {
     return {
       rightDrawer: true
