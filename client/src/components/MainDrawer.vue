@@ -15,7 +15,7 @@
       <q-list-header>
         {{$t('menu')}}
       </q-list-header>
-      <q-item to="aviary" v-for="page in pages" :key="page">
+      <q-item :to="`/${page}`" v-for="page in pages" :key="page">
         <q-item-main>
           <q-item-tile>
             {{$t(`page.${page}`)}}
@@ -31,7 +31,7 @@
           </div>
         </div>
       </q-list-header>
-      <q-item @click.native="$refs.toggle.toggle()">
+      <q-item @click.native="$refs.toggle.toggle">
         <q-item-main>
           <q-item-tile>
             {{$t('currentLang')}}
@@ -39,7 +39,7 @@
         </q-item-main>
         <q-item-side>
           <q-item-tile>
-            <lang-toggle ref="toggle"></lang-toggle>
+            <lang-toggle @click.native="$refs.toggle.toggle" ref="toggle"></lang-toggle>
           </q-item-tile>
         </q-item-side>
       </q-item>
@@ -51,13 +51,20 @@
 <script>
 import QResponsiveImg from 'components/QResponsiveImg'
 import LangToggle from 'components/LangToggle'
-import pages from '../router/pages'
+// import pages from '../router/pages'
 export default {
   name: 'MainDrawer',
   components: { LangToggle, QResponsiveImg },
   data () {
     return {
-      pages
+      pages: [
+        'florafauna',
+        'parqueacuatico',
+        'gastronomia',
+        'eventos',
+        'precios',
+        'nosotros'
+      ]
     }
   }
 }

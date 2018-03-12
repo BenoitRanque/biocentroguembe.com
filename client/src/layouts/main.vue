@@ -11,7 +11,7 @@
           <img class="xs" style="height: 64px" src="~assets/isologo.svg" alt="">
         </router-link>
         <q-toolbar-title>
-          {{$t(`pagetitle.${$route.name}`)}}
+          {{$t(`page.${$route.name}`)}}
         </q-toolbar-title>
         <div>
 
@@ -20,6 +20,8 @@
           flat
           round
           dense
+          class="transition-generic"
+          :class="{ 'rotate-180': rightDrawer }"
           :icon="rightDrawer ? 'close' : 'menu'"
           @click="rightDrawer = !rightDrawer"
         />
@@ -73,19 +75,11 @@ export default {
 {
   "es": {
     "hello": "hola",
-    "menu": "Menú",
-    "pagetitle": {
-      "index": "Inicio",
-      "404": "Error 404"
-    }
+    "menu": "Menú"
   },
   "en": {
     "hello": "hello",
-    "menu": "Menu",
-    "pagetitle": {
-      "index": "Welcome",
-      "404": "Error 404"
-    }
+    "menu": "Menu"
   }
 }
 </i18n>

@@ -65,6 +65,7 @@ module.exports = function (ctx) {
         'QItemSide',
         'QItemTile',
         'QItemSeparator',
+        'QCollapsible',
         'QTabs',
         'QRouteTab',
         'QCarousel',
@@ -89,7 +90,9 @@ module.exports = function (ctx) {
     // animations: 'all' --- includes all animations
     animations: [
       'slideInDown',
-      'slideOutDown'
+      'slideOutDown',
+      'rotateIn',
+      'rotateOut'
     ],
     pwa: {
       cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',

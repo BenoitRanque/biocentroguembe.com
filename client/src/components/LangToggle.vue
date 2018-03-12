@@ -1,5 +1,5 @@
 <template>
-  <q-btn class="" style="overflow:hidden;" flat round dense size="md" @click="toggle">
+  <q-btn class="" style="overflow:hidden;" flat round dense size="md" @click.native="toggle">
     <transition
       :duration="500"
       enter-active-class="animated slideInDown"
