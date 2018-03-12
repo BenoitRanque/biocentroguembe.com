@@ -1,8 +1,8 @@
 {
   "name": "biocentroguembe.com",
   "version": "1.0.0",
-  "description": "Front end for Bicoentroguembe.com",
-  "productName": "BiocentroGuembe.com frontend",
+  "description": "Biocentroguembe.com",
+  "productName": "BiocentroGuembe.com",
   "cordovaId": "org.cordova.quasar.app",
   "author": "Benoit Ranque",
   "private": true,

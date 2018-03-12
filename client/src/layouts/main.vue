@@ -1,15 +1,13 @@
 <template>
   <q-layout
-    view="HHH lpR fff"
+    view="HHH lpR ffr"
   > <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
     <q-layout-header reveal>
       <q-toolbar v-ripple inverted class="q-px-sm q-py-none">
-        <router-link to="/" class="relative-position">
-          <img class="gt-xs" style="height: 64px" src="~assets/logo.svg" alt="">
-          <img class="xs" style="height: 64px" src="~assets/isologo.svg" alt="">
-        </router-link>
+        <img @click="$router.push('/')" class="cursor-pointer gt-xs" style="height: 64px" src="~assets/logo.svg" alt="">
+        <img @click="$router.push('/')" class="cursor-pointer xs" style="height: 64px" src="~assets/isologo.svg" alt="">
         <q-toolbar-title>
           {{$t(`page.${$route.name}`)}}
         </q-toolbar-title>
@@ -36,7 +34,6 @@
     <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
     <q-layout-drawer
       side="right"
-      overlay
       content-class=""
       v-model="rightDrawer"
     >
@@ -62,7 +59,7 @@ export default {
   },
   data () {
     return {
-      rightDrawer: true
+      rightDrawer: false
     }
   }
 }

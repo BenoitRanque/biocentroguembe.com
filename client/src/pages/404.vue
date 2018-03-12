@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed-center text-center">
+  <q-page class="column justify-center items-center text-center q-pa-md">
     <p>
       <img
         src="~assets/sad.svg"
@@ -13,7 +13,7 @@
       @click="$router.push('/')"
       :label="$t('goback')"
     />
-  </div>
+  </q-page>
 </template>
 
 <i18n>

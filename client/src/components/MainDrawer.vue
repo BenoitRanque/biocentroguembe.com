@@ -4,7 +4,7 @@
       <q-list-header>
         {{$t('map')}}
       </q-list-header>
-      <q-item class="q-pa-none" to="map">
+      <q-item class="q-pa-none" to="mapa">
         <q-item-main>
           <q-item-tile>
             <q-responsive-img src="map" format="map" sizes="xs 300px"></q-responsive-img>
@@ -46,6 +46,7 @@
     </q-list>
     <!-- Content here -->
   </q-scroll-area>
+
 </template>
 
 <script>
