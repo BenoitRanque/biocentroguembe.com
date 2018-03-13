@@ -1,6 +1,8 @@
 <template>
   <q-page>
-    <q-backdrop src="amboro_2"/>
+    <q-backdrop>
+      <q-responsive-img src="amboro_2" format="slide"></q-responsive-img>
+    </q-backdrop>
     <q-carousel infinite arrows handle-arrow-keys>
       <q-carousel-slide
         class="q-pa-none cursor-pointer"

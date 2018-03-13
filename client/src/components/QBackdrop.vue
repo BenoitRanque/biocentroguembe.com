@@ -1,19 +1,12 @@
 <template>
-  <div class="q-backdrop">
-    <q-responsive-img :src="src" format="slide" class="fit no-pointer-events"/>
+  <div class="q-backdrop no-pointer-events">
+    <slot></slot>
   </div>
 </template>
 
 <script>
-import QResponsiveImg from 'components/QResponsiveImg'
 export default {
-  name: 'QBackdrop',
-  components: {
-    QResponsiveImg
-  },
-  props: {
-    src: String
-  }
+  name: 'QBackdrop'
 }
 </script>
 
@@ -27,4 +20,8 @@ export default {
   bottom 0
   left 0
   right 0
+
+  > *
+    width 100%
+    height  100%
 </style>
