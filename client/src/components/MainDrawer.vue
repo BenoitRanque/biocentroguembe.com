@@ -1,6 +1,6 @@
 <template>
   <q-scroll-area class="fit bg-secondary">
-    <q-list no-border link dark>
+    <q-list no-border dark link>
       <q-list-header>
         {{$t('map')}}
       </q-list-header>
@@ -22,6 +22,7 @@
           </q-item-tile>
         </q-item-main>
       </q-item>
+
       <q-list-header>
         <div class="row q-pr-xs">
           <div class="col">
@@ -65,6 +66,20 @@ export default {
         'eventos',
         'precios',
         'nosotros'
+      ],
+      menu: [
+        {
+          label: 'parent',
+          header: 'parent',
+          target: '/',
+          children: [
+            {
+              header: 'parent',
+              target: '/',
+              label: 'child'
+            }
+          ]
+        }
       ]
     }
   }

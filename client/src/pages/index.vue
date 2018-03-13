@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <q-backdrop src="grafico_piscinas"/>
+    <q-backdrop src="amboro_2"/>
     <q-carousel infinite arrows handle-arrow-keys>
       <q-carousel-slide
         class="q-pa-none cursor-pointer"
@@ -34,7 +34,7 @@
                     {{$t(`cardcaption.${card.caption}`)}}
                   </div>
                   <div class="col-auto">
-                    <q-btn size="sm" rounded flat icon="forward"></q-btn>
+                    <q-btn size="sm" color="secondary" rounded flat icon="forward"></q-btn>
                   </div>
                 </div>
               </q-card-title>
@@ -107,64 +107,64 @@ export default {
       ],
       cards: [
         {
-          img: 'parabaazul',
+          img: 'mariposa_card_2',
+          caption: 'mariposario',
+          target: 'florafauna/mariposario'
+        },
+        {
+          img: 'kayaks_card_1',
+          caption: 'kayaks',
+          target: 'aviario'
+        },
+        {
+          img: 'orquideario_card_1',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'lorohablador_card',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'espejillos_card_2',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
-          caption: 'aviario',
-          target: 'aviario'
-        },
-        {
-          img: 'parabaazul',
-          caption: 'aviario',
-          target: 'aviario'
-        },
-        {
-          img: 'parabaazul',
+          img: 'canchas_card_1',
           caption: 'aviario',
           target: 'aviario'
         }
       ],
       cards2: [
         {
-          img: 'parabaazul',
+          img: 'amboro_card_2',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'laspalmas_card_2',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'evoluseum_card',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'flora_card',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'tucan_card',
           caption: 'aviario',
           target: 'aviario'
         },
         {
-          img: 'parabaazul',
+          img: 'saimiri_card',
           caption: 'aviario',
           target: 'aviario'
         }
