@@ -76,6 +76,7 @@
 import QResponsiveImg from 'components/QResponsiveImg'
 import QBackdrop from 'components/QBackdrop'
 import MapIcons from 'components/MapIcons'
+import WhiteWave from 'components/WhiteWave'
 import QImg from 'components/QImg'
 export default {
   name: 'PageIndex',
@@ -83,7 +84,8 @@ export default {
     QImg,
     QResponsiveImg,
     QBackdrop,
-    MapIcons
+    MapIcons,
+    WhiteWave
   },
   data () {
     return {

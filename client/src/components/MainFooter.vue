@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white text-primary">
     <div class="layout-padding page-width text-center">
-      <div class="row gutter-sm">
+      <!-- <div class="row gutter-sm">
         <div class="col-md-4">
         content here
         </div>
@@ -11,8 +11,9 @@
         <div class="col-md-4">
         content here
         </div>
-      </div>
-      <img style="max-width:100%;" class="q-mt-xl" src="~assets/logo.svg" alt="">
+      </div> -->
+      <q-img lazy style="max-width:100%;display:inline-block;" class="q-mt-xl" src="/assets/logo.svg" alt="Logo Full"></q-img>
+      <!-- <img style="max-width:100%;" class="q-mt-xl" src="~assets/logo.svg" alt=""> -->
     </div>
     <div class="bg-primary text-white text-center shadow-up-6">
       <div class="layout-padding page-width">
@@ -27,8 +28,12 @@
 </template>
 
 <script>
+import QImg from 'components/QImg'
 export default {
-  name: 'MainFooter'
+  name: 'MainFooter',
+  components: {
+    QImg
+  }
 }
 </script>
 
