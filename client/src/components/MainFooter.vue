@@ -12,7 +12,7 @@
         content here
         </div>
       </div> -->
-      <q-img lazy style="max-width:100%;display:inline-block;" class="q-mt-xl" src="/assets/logo.svg" alt="Logo Full"></q-img>
+      <q-img style="max-width:100%;display:inline-block;" class="q-mt-xl" src="/assets/logo.svg" alt="Logo Full"></q-img>
       <!-- <img style="max-width:100%;" class="q-mt-xl" src="~assets/logo.svg" alt=""> -->
     </div>
     <div class="bg-primary text-white text-center shadow-up-6">

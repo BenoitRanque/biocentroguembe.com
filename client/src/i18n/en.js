@@ -1,7 +1,7 @@
 export default {
   // common translations for EN locale
   'page': {
-    'aviario': 'Aviario',
+    'florafauna-aviario': 'Aviary',
     'gastronomia': 'Gastronomia',
     'nosotros': 'Nosotros',
     'eventos': 'Eventos',
@@ -9,7 +9,7 @@ export default {
     'parqueacuatico': 'Parque Acuatico',
     'recreacion': 'Recreacion',
     'florafauna': 'Flora & Fauna',
-    'index': 'Inicio',
+    'index': '',
     '404': 'Error 404'
   }
 }

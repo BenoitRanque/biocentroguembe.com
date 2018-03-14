@@ -9,7 +9,7 @@
         <img @click="$router.push('/')" class="cursor-pointer gt-xs" style="height: 64px" src="~assets/logo.svg" alt="">
         <img @click="$router.push('/')" class="cursor-pointer xs" style="height: 64px" src="~assets/isologo.svg" alt="">
         <q-toolbar-title>
-          {{$t(`page.${$route.name}`)}}
+          {{$t(`page.${$route.name.replace(/\//g, '-') }`)}}
         </q-toolbar-title>
         <div>
 
@@ -45,6 +45,12 @@
       <router-view />
     </q-page-container>
 
+    <q-page-sticky position="top-right" :offset="[32, 24]">
+      <q-btn size="xl" color="secondary">
+        SUPER PROMO
+      </q-btn>
+    </q-page-sticky>
+
   </q-layout>
 </template>
 
@@ -72,7 +78,10 @@ export default {
 {
   "es": {
     "hello": "hola",
-    "menu": "Menú"
+    "menu": "Menú",
+    "page": {
+      "florafauna-aviario": "hello"
+    }
   },
   "en": {
     "hello": "hello",

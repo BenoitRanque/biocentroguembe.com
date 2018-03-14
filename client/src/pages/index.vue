@@ -3,7 +3,7 @@
     <q-backdrop>
       <q-responsive-img src="amboro_2" format="slide"></q-responsive-img>
     </q-backdrop>
-    <q-carousel infinite arrows handle-arrow-keys>
+    <q-carousel infinite arrows handle-arrow-keys quick-nav>
       <q-carousel-slide
         class="q-pa-none cursor-pointer"
         v-for="(slide, index) in slides"
@@ -12,8 +12,8 @@
       >
         <q-responsive-img :src="slide.image" format="slide" immediate />
       </q-carousel-slide>
-      <q-carousel-control position="bottom" slot="control-nav" slot-scope="carousel" :offset="[18, 52]">
-      </q-carousel-control>
+      <!-- <q-carousel-control position="bottom" slot="control-nav" slot-scope="carousel" :offset="[18, 52]">
+      </q-carousel-control> -->
     </q-carousel>
     <div class="layout-padding page-width">
       <!-- <div class="row wrap gutter-sm q-mb-md">
@@ -27,7 +27,7 @@
       </div> -->
       <div class="row wrap gutter-sm">
         <div class="col-xs-6 col-md-4 col-12" v-for="(card, index) in cards" :key="index">
-          <q-card class="cursor-pointer" @click.native="$router.push(`/${card.target}`)">
+          <q-card class="cursor-pointer" @click.native="$router.push(card.target)">
             <q-card-media>
               <q-responsive-img :src="card.img" format="card" sizes="lg 300px, md 33vw, xs 50vw"></q-responsive-img>
               <q-card-title slot="overlay" class="q-pa-sm">
@@ -36,7 +36,7 @@
                     {{$t(`cardcaption.${card.caption}`)}}
                   </div>
                   <div class="col-auto">
-                    <q-btn size="sm" color="secondary" rounded flat icon="forward"></q-btn>
+                    <q-btn size="sm" rounded flat icon="forward"></q-btn>
                   </div>
                 </div>
               </q-card-title>
@@ -49,7 +49,7 @@
       </map-icons>
       <div class="row wrap gutter-sm">
         <div class="col-xs-6 col-md-4 col-12" v-for="(card, index) in cards2" :key="index">
-          <q-card class="cursor-pointer" @click.native="$router.push(`/${card.target}`)">
+          <q-card class="cursor-pointer" @click.native="$router.push(card.target)">
             <q-card-media>
               <q-responsive-img :src="card.img" format="card" sizes="lg 300px, md 33vw, xs 50vw"></q-responsive-img>
               <q-card-title slot="overlay" class="q-pa-sm">
@@ -93,19 +93,19 @@ export default {
     return {
       slides: [
         {
-          target: '/aviario',
+          target: '/florafauna/aviario',
           image: 'grafico_fauna'
         },
         {
-          target: '/aviario',
+          target: '/florafauna/aviario',
           image: 'grafico_hotel'
         },
         {
-          target: '/aviario',
+          target: '/florafauna/aviario',
           image: 'grafico_piscinas'
         },
         {
-          target: '/aviario',
+          target: '/florafauna/aviario',
           image: 'grafico_recreacion'
         }
       ],
@@ -113,64 +113,64 @@ export default {
         {
           img: 'mariposa_card_2',
           caption: 'mariposario',
-          target: 'florafauna/mariposario'
+          target: '/florafauna/mariposario'
         },
         {
           img: 'kayaks_card_1',
           caption: 'kayaks',
-          target: 'aviario'
+          target: '/recreacion'
         },
         {
           img: 'orquideario_card_1',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'orquideario',
+          target: '/florafauna/aviario'
         },
         {
           img: 'lorohablador_card',
           caption: 'aviario',
-          target: 'aviario'
+          target: '/florafauna/aviario'
         },
         {
           img: 'espejillos_card_2',
-          caption: 'aviario',
+          caption: 'espejillos',
           target: 'aviario'
         },
         {
           img: 'canchas_card_1',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'canchas',
+          target: '/recreacion'
         }
       ],
       cards2: [
         {
           img: 'amboro_card_2',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'amboro',
+          target: '/parqueacuatico'
         },
         {
           img: 'laspalmas_card_2',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'gastronomia',
+          target: '/gastronomia'
         },
         {
           img: 'evoluseum_card',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'evoluseum',
+          target: '/florafauna/evoluseum'
         },
         {
           img: 'flora_card',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'flora',
+          target: 'flroafauna/flora'
         },
         {
           img: 'tucan_card',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'noticias',
+          target: '/noticias'
         },
         {
           img: 'saimiri_card',
-          caption: 'aviario',
-          target: 'aviario'
+          caption: 'nosotros',
+          target: '/nosotros'
         }
       ]
       // promos: [
@@ -187,12 +187,34 @@ export default {
 {
   "es": {
     "cardcaption": {
-      "aviario": "Aviario"
+      "aviario": "Aviario",
+      "amboro": "Piscinas Amboro",
+      "espejillos": "Piscinas Espejillos",
+      "kayaks": "Kayaks",
+      "orquideario": "Orquideario",
+      "mariposario": "Mariposario",
+      "canchas": "Canchas Deportivas",
+      "gastronomia": "Gastronomia",
+      "nosotros": "Nosotros",
+      "noticias": "Noticias",
+      "flora": "Flora",
+      "evoluseum": "Evoluseum"
     }
   },
-  "es": {
+  "en": {
     "cardcaption": {
-      "aviario": "Aviary"
+      "aviario": "Aviary",
+      "amboro": "Amboro Swimming Pools",
+      "espejillos": "Espejillos Swimming Pools",
+      "kayaks": "Kayaks",
+      "orquideario": "Orchid Sanctuary",
+      "mariposario": "Butterfly Dome",
+      "canchas": "Sports",
+      "gastronomia": "Gastronomy",
+      "nosotros": "About Us",
+      "noticias": "News",
+      "flora": "Flora",
+      "evoluseum": "Evoluseum"
     }
   }
 }

@@ -9,7 +9,7 @@
         :alt="$attrs.alt"
       >
     </transition>
-    <transition name="reveal" @after-enter="state += 1">
+    <transition :name="placeholder ? 'reveal' : ''" @after-enter="state += 1">
       <img
         v-if="state > 0"
         v-show="state > 1"

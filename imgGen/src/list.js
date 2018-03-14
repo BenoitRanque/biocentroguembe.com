@@ -1,4 +1,9 @@
 export default {
+  // TODO 
+  //
+  // Refactor: 
+  // 'size': [ 'image' ]
+
   // 'parabaazul2': 'card',
   // 'parabaazul': 'card',
   'grafico_hotel': 'slide',
@@ -45,8 +50,6 @@ export default {
   'amboro_card_3': 'card',
   'amboro_card_4': 'card',
   'ardilla_card': 'card',
-  'aviario_1': 'card',
-  'aviario_2': 'card',
   'aviario_card_1': 'card',
   'aviario_card_2': 'card',
   'aviario_card_3': 'card',
