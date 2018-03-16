@@ -45,6 +45,13 @@
         </q-item-side>
       </q-item>
     </q-list>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-auto q-px-md">
+
+        <theme-settings></theme-settings>
+      </div>
+    </div>
     <!-- Content here -->
   </q-scroll-area>
 
@@ -53,10 +60,11 @@
 <script>
 import QResponsiveImg from 'components/QResponsiveImg'
 import LangToggle from 'components/LangToggle'
+import ThemeSettings from 'components/ThemeSettings'
 // import pages from '../router/pages'
 export default {
   name: 'MainDrawer',
-  components: { LangToggle, QResponsiveImg },
+  components: { LangToggle, QResponsiveImg, ThemeSettings },
   data () {
     return {
       pages: [
