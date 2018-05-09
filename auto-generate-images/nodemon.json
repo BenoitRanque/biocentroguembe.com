@@ -1,9 +1,14 @@
 {
   "verbose": true,
+  "restartable": "rs",
+  "legacyWatch": true,
   "ignore": [
     "images*",
     "src/generate.js",
     "src/resize.js",
     "src/cfg.js"
+  ],
+  "watch": [
+   "images/"
   ]
 }
