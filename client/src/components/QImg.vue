@@ -65,11 +65,11 @@ export default {
         left 0
         top 0
         will-change transform opacity
-        animation reveal 1s ease-out
+        animation reveal 0.3s ease-out
 
       &.preview-leave-active
         will-change transform
-        animation preview 1s ease-out
+        animation preview 0.3s ease-out
 
 @keyframes reveal
   0%
