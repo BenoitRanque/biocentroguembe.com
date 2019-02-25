@@ -33,7 +33,7 @@ export default {
           y: 23,
           w: 7.6,
           hash: 'aviario',
-          page: 'resort/florafauna/centrocustodia/aviario'
+          page: 'florafauna/aviario'
         },
         {
           x: 15,
